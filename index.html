@@ -20,9 +20,13 @@
     
     body{
         font-family: cursive;padding-left: 100px;padding-right: 100px;
-        background-color: aliceblue;color: white;color: black;
+        background-color: aliceblue;color: black;
         
     }
+    #background{
+        background-image: url("./images/profile.jpg");
+    }
+    
     #form{
         border: solid 1px;width: 300px;height: 200px;text-align: center;
         position:fixed; left: 35%;margin-top: 25px;
@@ -31,7 +35,7 @@
         color: white;background-color: chartreuse;height: 70px;border: 1px solid;
     }
     #profile{
-        background-color: #FFFAF0;
+        
     }
     .image{
         position: absolute; left:40% 
@@ -64,7 +68,10 @@
         position: absolute;top: 300px;left: 200px;cursor: pointer;
     }
     #education{
-        position: absolute;top: 500px;left: 100px;width: 250px;background-color: white;color: black;
+        position: absolute;top: 600px;left: 100px;width: 250px;background-color: white;color: black;
+    }
+    #game_det{
+        position: absolute;top: 600px;left: 100px;width: 250px;background-color: white;color: black;
     }
     h2.school{
         border: 1px solid;
@@ -89,9 +96,21 @@
     #college_det{
         display: none;margin-left: 300px;
     }
+    #home:hover{
+       background-color: bisque;
+    }
+    #game{
+        cursor: pointer;
+    }
+    #dice:hover{
+        background-color: burlywood;cursor: pointer;
+    }
+    #monster:hover{
+        background-color: burlywood;cursor: pointer;
+    }
     </style>
     
-        <body>
+        <body><div id="background">
                 <div id="heading">
                         <h1 align="center" style="padding: 5px;">Resume</h1>
                         </div><hr>
@@ -105,11 +124,24 @@
                                  
                              </div>  
                                   
-                                
-                           
-                           
-                                
+                            </div> 
+                           </div>
+                           <nav class="navbar navbar-expand-sm bg-light">
+                                <div class="navbar-header">
+                                    <a href="index.html" class="navbar-active">Home</a>
                                 </div>
+                                <!-- Links -->
+                                <ul class="navbar-nav" style="float: left;">
+                                  <li class="nav-item" id="game" style="margin-left:900px;background-color:lavender;height: 40px;width: 80px;">
+                                    <p align="center">Games</p>
+                                  </li>
+                                  
+                                </ul>
+                              
+                              </nav>
+                              
+                                
+                                
                             </hr>
                                 <hr>
                                 <div id="information">
@@ -128,8 +160,8 @@
                            </tr>
                            <tr>
                                 <td class="id">Email</td>
-                                <td class="id">
-                                    shashankgbshashi@gmail<i class="fa fa-envelope" aria-hidden="true" style="margin: 20px;"></i></td>
+                                <td class="id"><a href="mailto:shashankgbshashi@gmail.com">
+                                    shashankgbshashi@gmail</a><i class="fa fa-envelope" aria-hidden="true" style="margin: 20px;"></i></td>
                             </tr>
                             <tr>
                                 <td class="id">Phone</td>
@@ -224,6 +256,14 @@
                             <li>
                                 php
                             </li>
+                            <li>
+                                    css
+                                </li>
+                                <li>
+                                        html
+                                    </li>
+                            <li><a href="sample.html">Dice Game</a></li>
+                            <li><a href="game.html">Monster Game</a></li>
                         </ul>
                         <p align="center"><a href="./signup.html">more</a></p>
                         <hr>
@@ -251,9 +291,23 @@
                                     </div>
                 
                         </div>
+                        
+
+                        <div id="game_det">
+                                <div id="dice" style="border: 1px solid;">
+                                   <h4 style="margin-left: 20px;"><a href="sample.html">Dice</a></h4>
+                                </div>
+                                <div id="monster" style="border: 1px solid;">
+                                        <h4 style="margin-left: 20px;"><a href="game.html">Monster Game</a></h4> 
+                                    </div>
+                                    
+                    
+                            </div>
+                        
 
                         <script type="text/javascript">
                         $('#education').hide();
+                        $('#game_det').hide();
                         $('#about').click(function(){
                             if($('#education').is(':visible')){
                                 $('#education').hide();
@@ -261,11 +315,25 @@
                                 $('#primary_det').hide();
                                 $('#high_det').hide();
                                $('#college_det').hide();
+                               $('#game_det').hide();
                                 $('#information').css('margin-left','0px');
                                 $(this).html('<h2 style="display:inline;">Education</h2><span>(click)</span>')
                             }else{
-                                $('#education').show();
-                            $('#information').css('margin-left','300px');
+                                if($('#game_det').is(':visible')){
+                                    $('#game_det').hide();
+                                    $('#information').show();
+                                    $('#high_det').hide();
+                                    $('#primary_det').hide();
+                                    $('#college_det').hide();
+                                    $('#education').hide();
+                                    $('#information').css('margin-left','0px');
+                                }else{
+                                    $('#education').show();   
+                                    $('#information').css('margin-left','300px');
+                                }
+                               
+                                
+                            
                             console.log($(this).text());
                             $(this).html('<h2 style="display:inline;">Personal</h2><span>(click)</span>')
                             }
@@ -292,6 +360,26 @@
                             $('#high_det').hide();
                             $('#college_det').show();
 
+                        });
+                        $('#game').click(function(){
+                           if($('#game_det').is(':visible')){
+                               $('#game_det').hide();
+                               $('#high_det').hide();
+                            $('#information').show();
+                            $('#primary_det').hide();
+                            $('#college_det').hide();
+                               $('#information').css('margin-left','0px');
+                                $('#about').html('<h2 style="display:inline;">Education</h2><span>(click)</span>');
+
+                           }else{
+                               if($('#education').is(':visible')){
+                                   $('#education').hide();
+                                   $('#game_det').show();
+                               }else{
+                                   $('#game_det').show();
+                                   $('#information').css('margin-left','300px');
+                               }
+                           }
                         });
                         </script>
         </body>
