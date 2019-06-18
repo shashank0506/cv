@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <head>
         <title>
@@ -19,12 +19,20 @@
     <style type="text/css">
     
     body{
-        font-family: cursive;padding-left: 100px;padding-right: 100px;
+        font-family: cursive;
         background-color:white;color: black;
+       
         
     }
+    #shashi{
+        padding-left: 100px;padding-right: 100px;
+        background-image: url("https://images.unsplash.com/photo-1418985991508-e47386d96a71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+       height: 800px;
+         
+      
+    }
     #background{
-        background-image: url("./images/profile.jpg");
+        background-image: url("./images/profile.jpg");height:auto;border: 1px solid;margin-top: 70px;
     }
     
     #form{
@@ -37,38 +45,30 @@
     #profile{
         
     }
-    .image{
-        position: absolute; left:40% 
-        ;
-    }
-    img{
-        width: 200px;height:200px;border-style: ridge;border-width:10px;border-color: coral blue red turquoise;
-    }
+    
     td.id{
         border: 1px solid;width: 500px;height: 50px;
     }
     #profile_pic:hover{
-        width: 300px;height: 300px;border-radius: 0%;padding: 10px;margin-top: 10px;
-        margin-bottom:5px; 
-
+        width: 250px;height: 250px;border-radius: 0%;
     }
-    #profile_pic{
-        width: 200px;height: 200px;margin-left: 440px;border-radius: 50%;padding: 10px;margin-top: 10px;
-        margin-bottom:5px; border: 1px solid;
-    }
+    
+    
     #input{
         border: 1px solid;width: 300px;margin-left: 40%; 
         
+    }
+    img{
+        margin-top: 40px; 
     }
     #information{
         
     }
     #about{
-        background-color: aqua;width: 220px;height: 50px;border: 1px solid;
-        position: absolute;top: 300px;left: 200px;cursor: pointer;
+        
     }
     #education{
-        position: absolute;top: 600px;left: 100px;width: 250px;background-color: white;color: black;
+        position: absolute;top: 500px;left: 100px;width: 250px;background-color: aliceblue;color: black;
     }
     #game_det{
         position: absolute;top: 600px;left: 100px;width: 250px;background-color: white;color: black;
@@ -107,13 +107,34 @@
     }
     #monster:hover{
         background-color: burlywood;cursor: pointer;
+        
+    }
+    #nav{
+        position: fixed;left: 0px;width: 100%;z-index: 2;
+        
     }
     </style>
     
-        <body><div id="background">
+        <body>
+            <div id="nav">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark nav nav-pills">
+                        <a class="navbar-brand" href="#heading">Home</a>
+                        <a class="navbar-brand " href="#skills" style="margin-left: 70%;">Skills</a>
+                        <a class="navbar-brand" href="#profile" >
+                        <div id="about">
+                                <h4 align="center" style="display: inline;">                     Education
+                                                </h4><span></span>
+                                                
+                                            </div>
+                        </a>
+                       
+                    </nav>
+                    </div><div id="shashi">
+            
                 <div id="heading">
-                        <h1 align="center" style="padding: 5px;">Resume</h1>
+                      <!--  <h1 align="center" style="padding: 5px;">Resume</h1>
                         </div><hr>
+                        <div id="background">
                         <div id="profile">
                             <img src="./images/shashi1.JPG" alt="image" title="profile" id="profile_pic"> 
                             <h2 align="center" style="color: black"> Shashank</h2>
@@ -125,25 +146,23 @@
                              </div>  
                                   
                             </div> 
+                           </div>-->
+                           <div id="background">
+                               <div class="col-sm-2">
+                                     
+                               </div><div class="col-sm-10">
+                               <div id="profile"><p align="center">
+                                    <img src="./images/shashi1.JPG" alt="image" title="profile" id="profile_pic" height="200px" class="rounded-circle"></p>
+                               </div>
+                               <h3 align="center" style="color: black">Shashank</h3>
+                               <h3 align="center" style="color: black">Engineering Student in SIT</h3>
+                             </div>
                            </div>
-                           <nav class="navbar navbar-expand-sm bg-light">
-                                <div class="navbar-header">
-                                    <a href="index.html" class="navbar-active">Home</a>
-                                </div>
-                                <!-- Links -->
-                                <ul class="navbar-nav" style="float: left;">
-                                  <li class="nav-item" id="game" style="margin-left:900px;background-color:lavender;height: 40px;width: 80px;">
-                                    <p align="center">Games</p>
-                                  </li>
-                                  
-                                </ul>
-                              
-                              </nav>
+                          
+
                               
                                 
-                                
-                            </hr>
-                                <hr>
+                            <div class="row" id="shashi_info">
                                 <div id="information">
                                 <div >
                                     <h2>Personal Detailes:</h2>
@@ -243,8 +262,24 @@
         </table>
         </div>
         </div>
+        
+        <div id="education" style="border:1px solid black">
+                <div id="primary">
+                   <h4 style="margin-left: 20px;">primary School</h4>
+                </div>
+                <div id="high">
+                        <h4 style="margin-left: 20px;">High School</h4> 
+                    </div>
+                    <div id="college">
+                            <h4 style="margin-left: 20px;">College</h4>
+                        </div>
+    
+            </div>
+        </div>
             
                         <hr>
+                        <div class="row"><div class="col-sm-4"></div>
+                        <div class="col-sm-4" id="skills" style="color: black">
                         <h1>Technical skills</h1>
                         <ul>
                             <li>
@@ -264,14 +299,16 @@
                                     </li>
                            
                         </ul>
+                        </div>
+                        <div class="col-sm-4"></div>
+                        </div>
                         
-                        <p align="center"><a href="./signup.html">more</a></p>
                         <hr>
                         <div class="row">
                                 <div class="col-sm-4"></div>
                                 <div class="col-sm-4">
                                     <h1 style="color: blue">Objective</h1>
-                                    <h6>
+                                    <h6 style="color: black;">
                                             I am a creative and highly motivated student.I can lend my knowledge to help your organization improve profitability and grow my industry experience.
                                                                                         
                                     </h6>
@@ -290,18 +327,6 @@
                            </form>
                        </div>-->
                         
-                        <div id="education">
-                            <div id="primary" style="border: 1px solid;">
-                               <h4 style="margin-left: 20px;">primary School</h4>
-                            </div>
-                            <div id="high" style="border: 1px solid;">
-                                    <h4 style="margin-left: 20px;">High School</h4> 
-                                </div>
-                                <div id="college" style="border: 1px solid;">
-                                        <h4 style="margin-left: 20px;">College</h4>
-                                    </div>
-                
-                        </div>
                         
 
                         <div id="game_det">
@@ -314,7 +339,7 @@
                                     
                     
                             </div>
-                        
+                        </div>
 
                         <script type="text/javascript">
                         $('#education').hide();
@@ -328,7 +353,7 @@
                                $('#college_det').hide();
                                $('#game_det').hide();
                                 $('#information').css('margin-left','0px');
-                                $(this).html('<h2 style="display:inline;">Education</h2><span>(click)</span>')
+                                $(this).html('<h4 style="display:inline;">Education</h4><span></span>')
                             }else{
                                 if($('#game_det').is(':visible')){
                                     $('#game_det').hide();
@@ -346,7 +371,7 @@
                                 
                             
                             console.log($(this).text());
-                            $(this).html('<h2 style="display:inline;">Personal</h2><span>(click)</span>')
+                            $(this).html('<h4 style="display:inline;">Personal</h4><span></span>')
                             }
                             
                             
@@ -372,26 +397,7 @@
                             $('#college_det').show();
 
                         });
-                        $('#game').click(function(){
-                           if($('#game_det').is(':visible')){
-                               $('#game_det').hide();
-                               $('#high_det').hide();
-                            $('#information').show();
-                            $('#primary_det').hide();
-                            $('#college_det').hide();
-                               $('#information').css('margin-left','0px');
-                                $('#about').html('<h2 style="display:inline;">Education</h2><span>(click)</span>');
-
-                           }else{
-                               if($('#education').is(':visible')){
-                                   $('#education').hide();
-                                   $('#game_det').show();
-                               }else{
-                                   $('#game_det').show();
-                                   $('#information').css('margin-left','300px');
-                               }
-                           }
-                        });
+                       
                         </script>
         </body>
       
