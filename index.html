@@ -1,175 +1,300 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vendor</title>
-
+       
     
-    
-    
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+<link href="data:image/jpeg;base64,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" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 
-<link rel="icon" type="image/x-icon" href="https://mobilemarketingmagazine.com/wp-content/uploads/eCommerce.jpg">
-<style>
-    body{
-      
-    }
-    
-#background{
-    background-image: url("img/view.jpg");
-    height: 500px;background-repeat: no-repeat;margin-top: 10px;
-    }
-    #watch_bac_gre{
-        height: 100px;width: 100px;background-color: greenyellow;
-    }
-    #watch_bac_whi{
-        height: 100px;width: 100px;background-color: white;display: none;
-    }
-    #watch_1:hover{
-        height: 230px;width: 230px;
-    }
-        #watch_2:hover{
-        height: 230px;width: 230px;
-    }
-        #watch_3:hover{
-        height: 230px;width: 230px;
-    }
+        
 
-</style>
+
+        <title>
+            Resume
+        </title>
+        <style type="text/css">
+            body{
+                font-family: cursive;
+                background-color: rgb(246,242,242);
+            }
+            img{
+                border-radius: 50%;
+            }
+             img:hover{
+                border-radius: 0%;
+            }
+            nav{
+                background-color: blueviolet;
+            }
+            #primary_det{
+                display: none;
+            }
+            #high_det{
+                display: none;
+            }
+            #college_det{
+                display: none;
+            }
+            #primary{
+                cursor: pointer;
+            }
+                        #high{
+                cursor: pointer;
+            }
+                        #college{
+                cursor: pointer;
+            }
+            
+   
+    </style>
     </head>
-
-<body>   
-
-   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-       <a href="" class="navbar-brand">hello</a>
-       <div class="dropdown">
-           <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown">links</button>
+    
+    
+        <body>
+         <nav class="navbar navbar-expand-sm  navbar-dark">
+                
+                    <a class="navbar-brand" href="#profile_pic">Home</a>
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <div class="dropdown">
+           <button type="button" class="btn btn-outline-danger dropdown-toggle" data-toggle="dropdown">Education</button>
            <div class="dropdown-menu">
-               <a href="" class="dropdown-item">link1</a>
-               <a href="" class="dropdown-item">link1</a>
+               <div id="primary" class="dropdown-item">
+                   <h6>primary School</h6>
+                </div>
+               <div id="high" class="dropdown-item">
+                        <h6>High School</h6> 
+                    </div>
+               <div id="college" class="dropdown-item">
+                   <h6>College</h6>
+                </div>
            </div>
        </div>
-       
-   </nav>
-           
-    <div class="container">
-                <center>
-            <div id="background">
-                <div class="row">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-8" style="margin-top: 150px;">
-                        
-                                                <div id="text">
-                                                    <pre> <h2>The most popular Vendor website</h2>
-        <b><h5>It is a platform for purchasing goods online.</h5></b></pre><br><br>
-        <button type="button" class="btn btn-info">Start Shopping</button>
-   </div>
-                            
-   </div><div class="col-sm-3"></div>
-   
-                </div>
- 
-            </div></center>
-    </div>
-    
-          
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6"><br><br><h3>All are original products and you will be guarenteed
-                  for the products purchased</h3></div>
-    <div class="col-sm-3"></div>
-</div><br><br>
-<div id="shoes">
-    <center></center>
-<div class="row" id="watches" style="margin-top:20px;">
-    <div class="col-sm-4"  >
-        <div class="thumbnail" style="background-color:white">
-        <center>
-       <img src="img/watch1.jpg" alt="image" title="image" id="watch_1">
-        </center>
-            <center>  <p>All are original products and you will be guarenteed
-                    for the products purchased</p></center>
-
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="thumbnail" style="background-color:white;"><center>
-            <img src="img/watch2.jpg" alt="image" title="image" id="watch_2">
-            </center><center>
-            <p>All are original products and you will be guarenteed
-                for the products purchased</p></center>
-        </div>
-    </div>
-        <div class="col-sm-4" >
-            <div class="thumbnail" style="background-color:white">
-            <center>
-                <img src="img/watch3.jpg" alt="image" title="image" id="watch_3">
-              <p>All are original products and you will be guarenteed
-                    for the products purchased</p></center>
-            </div>
-            </div>
-    
-         
-</div>
-</div><!--
-<div class="row">
-        <div class="col-sm-4">
-           
-           <img src="./Shopping/shoe.jpg" alt="image" title="image" style="width: 200px;height:200px;">
-           
-        </div>
-        <div class="col-sm-4">
-                <img src="./Shopping/shoe.jpg" alt="image" title="image" style="width: 200px;height:200px;">
-            
-            </div>
-            <div class="col-sm-4">
-                    <img src="./Shopping/shoe.jpg" alt="image" title="image" style="width: 200px;height:200px;">
-            
-                </div>
-             
-    </div>
-    <div class="row">
-            <div class="col-sm-4">
-               
-               <img src="./Shopping/shoe.jpg" alt="image" title="image" style="width: 200px;height:200px;">
-               
-            </div>
-            <div class="col-sm-4">
-                    <img src="./Shopping/shoe.jpg" alt="image" title="image" style="width: 200px;height:200px;">
-                
-                </div>
-                <div class="col-sm-4">
-                        <img src="./Shopping/shoe.jpg" alt="image" title="image" style="width: 200px;height:200px;">
-                
+                        </li>
+                        <li class="nav-item active">
+                            <p class="dropdown-item" id="personal" style="cursor:pointer;">Personal</p>
+                        </li>
+                        <li>
+                            <a href="#skills" class="dropdown-item">Skills</a>
+                        <li>  
+                                                    <li>
+                            <a href="#objective" class="dropdown-item">Objective</a>
+                        <li>  
+                      
                     </div>
-                 
-        </div>-->
+                    
+                  </nav>
+            <div class="row" style="margin-top:30px;">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8" style="background-color:white;border-radius: 2%;"><center>
+                    <img src="image/header.jpg" alt="image" title="profile" id="profile_pic" style="margin-top:10px;">
+                    <h3 align="center" style="color: black">Shashank</h3>
+                               <h3 align="center" style="color: black">Engineering Student in SIT</h3>
+                    </center></div>
+                <div class="col-sm-2"></div>
+            </div>
+            <hr>
+            <div class="container">
+            <div class="row">
+                
+                <div class="col-sm-12">
+                    <div id="information"><center>
+                            <h2>Personal Detailes:</h2></center>
+                                <table id="table" class="table table-bordered table-hover table-dark table-striped">
+                           <tr>
+                               <td class="id">
+                                   Name:
+                               </td>
+                               <td class="id">Shashank </td>
+                           </tr>
+                           <tr>
+                               <td class="id">Date of birth</td>
+                               <td class="id">05/06/1999</td>
+                           </tr>
+                           <tr>
+                                <td class="id">Email</td>
+                                <td class="id"><a href="mailto:shashankgbshashi@gmail.com">
+                                    shashankgbshashi@gmail</a><i class="fa fa-envelope" aria-hidden="true" style="margin: 20px;"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="id">Phone</td>
+                                <td class="id">8296692254<i class="fa fa-phone" aria-hidden="true" style="margin: 20px;"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="id">Address</td>
+                                <td class="id">sit 8th cross, 1st link,tumkur
+                                    <i class="fa fa-map-marker" aria-hidden="true" style="margin:20px;"></i>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                    
+                    </div>
+                </div>
+                    <div class="col-sm-12">
+                        <div id="primary_det">
+                            <h2>Primary school</h2>
+                             <table id="table"  class="table table-bordered table-hover table-dark table-striped">
+                       <tr>
+                           <td class="id">
+                               Institute
+                           </td>
+                           <td class="id">Subhas school</td>
+                       </tr>
+                       <tr>
+                           <td class="id">Percentage</td>
+                           <td class="id">85%</td>
+                       </tr>
+                       <tr>
+                            <td class="id">Email</td>
+                            <td class="id">shashankgbshashi@gmail.com</td>
+                        </tr>
+                        
+                    </table>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                    <div id="high_det">
+                        <h2>High school</h2>
+                    <table id="table"  class="table table-bordered table-hover table-dark table-striped">
+               <tr>
+                   <td class="id">
+                       Institute
+                   </td>
+                   <td class="id">SArvodaya school</td>
+               </tr>
+               <tr>
+                   <td class="id">Percentage</td>
+                   <td class="id">90%</td>
+               </tr>
+               <tr>
+                    <td class="id">Address</td>
+                    <td class="id">vijayanagar,tumkur</td>
+                </tr>
+                
+            </table>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div id="college_det">
+                         <h2>College</h2>
+                <table id="table"  class="table table-bordered table-hover table-dark table-striped">
+           <tr>
+               <td class="id">
+                   Institute
+               </td>
+               <td class="id">Siddaganga institute of technology</td>
+           </tr>
+           <tr>
+               <td class="id">CGPA</td>
+               <td class="id">9.00</td>
+           </tr>
+           <tr>
+                <td class="id">Visit</td>
+                <td class="id"><a href="http://www.sit.ac.in/">Visit</a></td>
+            </tr>
+            
+        </table>
+                    </div>
+                </div>
+            </div><hr>
+            <div class="row" style="margin-top:20px;"><div class="col-sm-4"></div>
+                        <div class="col-sm-4" id="skills" style="color: black">
+                        <h1>Technical skills</h1>
+                        <ul>
+                            <li>
+                                c and c++
+                            </li>
+                            <li>
+                                Data structure
+                            </li>
+                            <li>
+                                php
+                            </li>
+                            <li>
+                                    css
+                                </li>
+                                <li>
+                                        html
+                                    </li>
+                           
+                        </ul>
+                        <a href="signup.html">More</a>
+                        </div>
+                        <div class="col-sm-4"></div>
+                        </div>
+            <hr>
+        <div class="row" style="margin-top:20px;">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4" id="objective">
+                                    <h1 style="color: blue">Objective</h1>
+                                    <h6 style="color: black;">
+                                            I am a creative and highly motivated student.I can lend my knowledge to help your organization improve profitability and grow my industry experience.
+                                                                                        
+                                    </h6>
+                                </div>
+                                <div class="col-sm-4"></div><br><br>
+                            </div>
+            
+            
+                        
 
-<script type="text/javascript">
-   
+                        <script type="text/javascript">
+            
     
-    $('#watches').mouseover(function(){
-        console.log($(this));
+    $('#primary').click(function(){
+        console.log('hello');
+        $('#college_det').hide();
+        $('#information').hide();
+        $('#high_det').hide();
+        $('#primary_det').show();
+        $('#college_det').hide();
+    });
+    $('#high').click(function(){
+                $('#college_det').hide();
+        console.log('hello');
+        $('#information').hide();
+        $('#high_det').show();
+        $('#primary_det').hide();
+        $('#college_det').hide();
+    });
+    $('#college').click(function(){
+        
+        console.log('college');
+        $('#information').hide();
+        $('#high_det').hide();
+        $('#primary_det').hide();
+        $('#college_det').hide();
+        $('#college_det').show();
     });
     
+    $('#personal').click(function(){
+                $('#information').show();
+        $('#high_det').hide();
+        $('#primary_det').hide();
+        $('#college_det').hide();
+        $('#college_det').hide();
+        
+    });
+                       
+                        </script>
+        </body>
+      
+        
     
-</script>
-
-</body>
-</html>
-
+        
+    
+    </html>
+    
