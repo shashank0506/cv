@@ -50,6 +50,9 @@
                         #college{
                 cursor: pointer;
             }
+            #profile_pic{
+                display: none;
+            }
             
    
     </style>
@@ -95,7 +98,7 @@
                     </div>
                     
                   </nav>
-            <div class="row" style="margin-top:30px;">
+            <div class="row" style="margin-top:30px;" id="hover">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8" style="background-color:white;border-radius: 2%;"><center>
                     <img src="image/header.jpg" alt="image" title="profile" id="profile_pic" style="margin-top:10px;">
@@ -252,7 +255,7 @@
                         
 
                         <script type="text/javascript">
-            
+            $('#profile_pic').show(2000);
     
     $('#primary').click(function(){
         console.log('hello');
